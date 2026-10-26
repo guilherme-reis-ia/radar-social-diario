@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Atualizações profissionais de TikTok, Instagram e Facebook, todos os dias, para quem trabalha com redes sociais.">
+<title>Radar Social Diário</title>
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: painel de leitura em uma coluna larga — cabeçalho-radar, barra de filtros fixa, feed de cards; newsletter ao pé */
+:root{
+  --bg:#F3F5F7; --surface:#FFFFFF; --surface-2:#E9EDF1; --line:#D5DCE3;
+  --fg:#111A22; --muted:#55636F; --accent:#0B6E79; --accent-soft:#D6EEF0;
+  --tt:#C2185B; --tt-soft:#FBE3EC; --ig:#B85C00; --ig-soft:#FCEBD9; --fb:#1F5FC9; --fb-soft:#E0EAFB;
+  --hi:#B3261E; --hi-soft:#FBE4E2; --md:#8A5A00; --md-soft:#FBF0D6; --lo:#4A6170; --lo-soft:#E6ECF0;
+  --test:#6B3FA0; --test-soft:#EFE6FA; --ok:#1B7A3D;
+  --f-display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --f-body:"Instrument Sans",ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"JetBrains Mono",ui-monospace,"Cascadia Mono",Consolas,monospace;
+  --radius:12px;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D1318; --surface:#151E25; --surface-2:#1C2731; --line:#2A3743;
+  --fg:#E6ECF1; --muted:#9AA9B5; --accent:#4FC3CF; --accent-soft:#12343A;
+  --tt:#F27AA6; --tt-soft:#3A1726; --ig:#F2A65A; --ig-soft:#3A2614; --fb:#7EA8F2; --fb-soft:#16284A;
+  --hi:#F28B82; --hi-soft:#3D1A18; --md:#E8C26A; --md-soft:#3A2F12; --lo:#A9BAC6; --lo-soft:#22303B;
+  --test:#C3A3EE; --test-soft:#2D2140; --ok:#6FD39A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1318; --surface:#151E25; --surface-2:#1C2731; --line:#2A3743;
+  --fg:#E6ECF1; --muted:#9AA9B5; --accent:#4FC3CF; --accent-soft:#12343A;
+  --tt:#F27AA6; --tt-soft:#3A1726; --ig:#F2A65A; --ig-soft:#3A2614; --fb:#7EA8F2; --fb-soft:#16284A;
+  --hi:#F28B82; --hi-soft:#3D1A18; --md:#E8C26A; --md-soft:#3A2F12; --lo:#A9BAC6; --lo-soft:#22303B;
+  --test:#C3A3EE; --test-soft:#2D2140; --ok:#6FD39A; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:15px;line-height:1.55}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0}
+a{color:var(--accent)}
+button,input,select{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* Cabeçalho */
+header.top{padding-block:28px 20px;border-bottom:1px solid var(--line);background:var(--surface)}
+.brand{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.sweep{width:46px;height:46px;flex:none}
+.sweep .arm{transform-origin:24px 24px;animation:spin 6s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.sweep .arm{animation:none}}
+h1{font-size:clamp(26px,4.4vw,38px);font-weight:800;letter-spacing:-.02em}
+.sub{color:var(--muted);margin:2px 0 0}
+.meta-row{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-top:22px}
+.updated{font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+.updated strong{color:var(--fg);font-weight:500}
+.counters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:16px}
+.counter{background:var(--surface-2);border-radius:var(--radius);padding:12px 14px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.counter .n{font-family:var(--f-display);font-size:30px;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.counter .l{font-size:12.5px;color:var(--muted);display:flex;align-items:center;gap:6px;letter-spacing:.02em}
+.counter.tt .n{color:var(--tt)} .counter.ig .n{color:var(--ig)} .counter.fb .n{color:var(--fb)}
+.dot{width:9px;height:9px;border-radius:50%;flex:none}
+.theme-btn{border:1px solid var(--line);background:var(--surface);border-radius:999px;min-height:40px;padding:0 14px;cursor:pointer;font-size:13px;display:inline-flex;align-items:center;gap:8px}
+
+/* Filtros */
+.filters{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+.filters .wrap{padding-block:12px;display:flex;flex-direction:column;gap:10px}
+.frow{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.flabel{font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);min-width:76px}
+.chip{border:1px solid var(--line);background:var(--surface);border-radius:999px;padding:6px 12px;min-height:36px;cursor:pointer;font-size:13.5px;display:inline-flex;align-items:center;gap:7px;transition:background .15s,border-color .15s}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.chip[aria-pressed="true"] .dot{box-shadow:0 0 0 2px var(--bg)}
+.search-row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.search{flex:1 1 240px;min-width:0;position:relative}
+.search input{width:100%;min-height:42px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:0 12px 0 36px}
+.search svg{position:absolute;left:11px;top:50%;transform:translateY(-50%);color:var(--muted)}
+select#dia{min-height:42px;border:1px solid var(--line);border-radius:10px;background:var(--surface);padding:0 10px;max-width:100%}
+.result-count{font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.clear{background:none;border:0;color:var(--accent);cursor:pointer;font-size:13px;min-height:36px;padding:0 4px;text-decoration:underline}
+
+/* Feed */
+main{padding-block:22px 40px}
+.day-group{display:flex;flex-direction:column;gap:12px;margin-bottom:26px}
+.day-title{font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);display:flex;align-items:center;gap:10px}
+.day-title::after{content:"";flex:1;height:1px;background:var(--line)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.card-btn{display:grid;grid-template-columns:auto 1fr auto;gap:14px;width:100%;text-align:left;background:none;border:0;padding:16px;cursor:pointer;align-items:start}
+.pico{width:38px;height:38px;border-radius:10px;display:grid;place-items:center;flex:none}
+.pico svg{width:20px;height:20px}
+.p-tiktok .pico{background:var(--tt-soft);color:var(--tt)}
+.p-instagram .pico{background:var(--ig-soft);color:var(--ig)}
+.p-facebook .pico{background:var(--fb-soft);color:var(--fb)}
+.card-main{min-width:0;display:flex;flex-direction:column;gap:6px}
+.tags{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.tag{font-size:11.5px;font-weight:600;letter-spacing:.03em;padding:2px 8px;border-radius:6px;background:var(--surface-2);color:var(--muted)}
+.tag.plat{background:none;padding-left:0}
+.p-tiktok .tag.plat{color:var(--tt)} .p-instagram .tag.plat{color:var(--ig)} .p-facebook .tag.plat{color:var(--fb)}
+.tag.imp-alto{background:var(--hi-soft);color:var(--hi)}
+.tag.imp-medio{background:var(--md-soft);color:var(--md)}
+.tag.imp-baixo{background:var(--lo-soft);color:var(--lo)}
+.tag.teste{background:var(--test-soft);color:var(--test)}
+.card h3{font-size:18px;font-weight:700;line-height:1.3;letter-spacing:-.01em}
+.lede{color:var(--muted);margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card.open .lede{display:none}
+.chev{color:var(--muted);transition:transform .2s;margin-top:6px}
+.card.open .chev{transform:rotate(180deg)}
+.card-body{padding:0 16px 18px 68px;display:flex;flex-direction:column;gap:12px}
+.card-body p{margin:0;max-width:68ch}
+.why{background:var(--accent-soft);border-radius:10px;padding:10px 12px}
+.why b{display:block;font-size:11.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);margin-bottom:2px}
+.src{display:flex;gap:14px;flex-wrap:wrap;font-family:var(--f-mono);font-size:12.5px;color:var(--muted)}
+.src a{word-break:break-word}
+.nota{font-size:13px;color:var(--muted);border-left:0;font-style:italic}
+
+.empty,.notice{background:var(--surface);border:1px dashed var(--line);border-radius:var(--radius);padding:36px 20px;text-align:center;color:var(--muted);display:flex;flex-direction:column;align-items:center;gap:8px}
+.empty h2{font-size:20px;color:var(--fg)}
+.empty svg{color:var(--accent)}
+
+/* Newsletter */
+.news{background:var(--surface);border-top:1px solid var(--line)}
+.news .wrap{padding-block:36px 44px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:28px;align-items:start}
+.news h2{font-size:26px;font-weight:800;letter-spacing:-.02em}
+.news p{color:var(--muted);margin:8px 0 0;max-width:46ch}
+form{display:flex;flex-direction:column;gap:12px}
+.field{display:flex;gap:8px;flex-wrap:wrap}
+.field input[type=email]{flex:1 1 220px;min-width:0;min-height:46px;border:1px solid var(--line);border-radius:10px;background:var(--bg);padding:0 14px}
+.field input[aria-invalid="true"]{border-color:var(--hi)}
+.primary{min-height:46px;padding:0 20px;border:0;border-radius:10px;background:var(--accent);color:var(--surface);font-weight:600;cursor:pointer}
+.primary:disabled{opacity:.6;cursor:progress}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--fg);cursor:pointer}
+.consent input{width:20px;height:20px;margin:1px 0 0;accent-color:var(--accent);flex:none}
+.msg{font-size:14px;min-height:1.4em;margin:0}
+.msg.err{color:var(--hi)} .msg.ok{color:var(--ok)}
+.fine{font-size:12.5px;color:var(--muted)}
+footer{padding-block:18px 28px;color:var(--muted);font-size:12.5px}
+
+@media (max-width:720px){
+  .counters{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .news .wrap{grid-template-columns:1fr}
+  .card-body{padding-left:16px}
+  .flabel{min-width:0;width:100%}
+}
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-tiktok" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="16" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13" r="3.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="9" r="2.4" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M3 19c.5-3.5 3-5 6-5s5.5 1.5 6 5M15 14.5c2.6-.4 5 1 5.5 4.5"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">
+      <svg class="sweep" viewBox="0 0 48 48" aria-hidden="true">
+        <circle cx="24" cy="24" r="21" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+        <circle cx="24" cy="24" r="13" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+        <circle cx="24" cy="24" r="5" fill="none" stroke="var(--line)" stroke-width="1.5"/>
+        <g class="arm"><path d="M24 24 L24 3 A21 21 0 0 1 42 13 Z" fill="var(--accent)" opacity=".22"/><line x1="24" y1="24" x2="24" y2="3" stroke="var(--accent)" stroke-width="2"/></g>
+        <circle cx="34" cy="16" r="2.4" fill="var(--tt)"/><circle cx="15" cy="30" r="2.4" fill="var(--ig)"/><circle cx="31" cy="35" r="2.4" fill="var(--fb)"/>
+      </svg>
+      <div style="flex:1;min-width:0">
+        <h1>Radar Social Diário</h1>
+        <p class="sub">O que mudou em TikTok, Instagram e Facebook para quem trabalha com redes sociais.</p>
+      </div>
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Alternar tema claro e escuro">
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg><span id="themeLbl">Tema</span>
+      </button>
+    </div>
+    <div class="meta-row">
+      <div class="updated" id="updated">Carregando dados do radar…</div>
+    </div>
+    <div class="counters" id="counters" aria-live="polite">
+      <div class="counter"><span class="n" id="c-all">–</span><span class="l">Novidades no dia</span></div>
+      <div class="counter tt"><span class="n" id="c-tiktok">–</span><span class="l"><span class="dot" style="background:var(--tt)"></span>TikTok</span></div>
+      <div class="counter ig"><span class="n" id="c-instagram">–</span><span class="l"><span class="dot" style="background:var(--ig)"></span>Instagram</span></div>
+      <div class="counter fb"><span class="n" id="c-facebook">–</span><span class="l"><span class="dot" style="background:var(--fb)"></span>Facebook</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="filters" aria-label="Filtros">
+  <div class="wrap">
+    <div class="search-row">
+      <label class="search" for="q"><span class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Buscar</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-3.5-3.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="q" type="search" placeholder="Buscar por palavra: Reels, anúncios, links…" autocomplete="off">
+      </label>
+      <label for="dia" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Dia</label>
+      <select id="dia"></select>
+    </div>
+    <div class="frow" id="f-plat"><span class="flabel">Plataforma</span></div>
+    <div class="frow" id="f-cat"><span class="flabel">Categoria</span></div>
+    <div class="frow" id="f-imp"><span class="flabel">Impacto</span>
+      <span style="flex:1"></span>
+      <span class="result-count" id="count" aria-live="polite"></span>
+      <button class="clear" id="clear" type="button">Limpar filtros</button>
+    </div>
+  </div>
+</section>
+
+<main class="wrap" id="feed" aria-live="polite">
+  <div class="empty">
+    <svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+    <h2>Sintonizando o radar</h2>
+    <p>As atualizações do dia aparecem aqui assim que os dados carregarem.</p>
+  </div>
+</main>
+
+<section class="news" aria-labelledby="news-h">
+  <div class="wrap">
+    <div>
+      <h2 id="news-h">Receba o Radar no seu e-mail</h2>
+      <p>Um resumo por dia útil com o que mudou nas três plataformas, os destaques de impacto alto e o link para cada fonte.</p>
+    </div>
+    <form id="nl" novalidate>
+      <div class="field">
+        <label for="email" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Seu e-mail</label>
+        <input id="email" type="email" placeholder="seu@email.com.br" autocomplete="email" required>
+        <button class="primary" id="nlBtn" type="submit">Quero receber</button>
+      </div>
+      <label class="consent" for="consent"><input id="consent" type="checkbox"><span>Aceito receber o Radar Social por e-mail e posso cancelar quando quiser.</span></label>
+      <p class="msg" id="nlMsg" role="status"></p>
+      <p class="fine">Usamos seu e-mail apenas para enviar o Radar. Ele não fica visível para outros visitantes desta página.</p>
+      <p class="fine" id="nlDemo" hidden>Modo demonstração: a inscrição é validada, mas ainda não é enviada a nenhum serviço.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="wrap">Fontes: comunicados oficiais das plataformas e imprensa especializada. Cada card traz o link da notícia lida.</footer>
+
+<script>
+(function(){
+  const PLATS=[["tiktok","TikTok"],["instagram","Instagram"],["facebook","Facebook"]];
+  const CATS=["Recursos","Algoritmo","Anúncios e monetização","Políticas e privacidade","Criadores","Comércio"];
+  const IMPS=[["alto","Alto"],["medio","Médio"],["baixo","Baixo"]];
+  const state={plat:new Set(),cat:new Set(),imp:new Set(),q:"",dia:"",open:new Set()};
+  let noticias=[],execucoes=[];
+
+  const norm=s=>String(s||"").normalize("NFD").replace(/[̀-ͯ]/g,"").toLowerCase().trim();
+  const impKey=v=>{const n=norm(v);return n.startsWith("a")?"alto":n.startsWith("m")?"medio":"baixo"};
+  const platKey=v=>norm(v);
+  const fmtDia=iso=>{if(!iso)return"";const[y,m,d]=iso.slice(0,10).split("-");return`${d}/${m}/${y}`};
+  const fmtDiaLongo=iso=>{try{return new Date(iso.slice(0,10)+"T12:00:00").toLocaleDateString("pt-BR",{weekday:"long",day:"numeric",month:"long"})}catch(e){return fmtDia(iso)}};
+  const el=(tag,cls,text)=>{const e=document.createElement(tag);if(cls)e.className=cls;if(text!=null)e.textContent=text;return e};
+
+  // Tema
+  const root=document.documentElement;
+  const themeBtn=document.getElementById("themeBtn");
+  function applyTheme(t){if(t)root.setAttribute("data-theme",t);else root.removeAttribute("data-theme");document.getElementById("themeLbl").textContent=t==="dark"?"Escuro":t==="light"?"Claro":"Tema"}
+  try{applyTheme(localStorage.getItem("radar-theme"))}catch(e){}
+  themeBtn.addEventListener("click",()=>{
+    const cur=root.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+    const next=cur==="dark"?"light":"dark";applyTheme(next);try{localStorage.setItem("radar-theme",next)}catch(e){}
+  });
+
+  // Filtros
+  function chip(container,key,val,label,color){
+    const b=el("button","chip");b.type="button";b.setAttribute("aria-pressed","false");
+    if(color){const d=el("span","dot");d.style.background=color;b.append(d)}
+    b.append(document.createTextNode(label));
+    b.addEventListener("click",()=>{const s=state[key];s.has(val)?s.delete(val):s.add(val);b.setAttribute("aria-pressed",s.has(val));render()});
+    container.append(b);
+  }
+  const fp=document.getElementById("f-plat"),fc=document.getElementById("f-cat"),fi=document.getElementById("f-imp");
+  PLATS.forEach(([k,l])=>chip(fp,"plat",k,l,`var(--${k==="tiktok"?"tt":k==="instagram"?"ig":"fb"})`));
+  CATS.forEach(c=>chip(fc,"cat",c,c));
+  const impAnchor=fi.querySelector("span[style]");
+  IMPS.forEach(([k,l])=>{const tmp=document.createElement("div");chip(tmp,"imp",k,l,`var(--${k==="alto"?"hi":k==="medio"?"md":"lo"})`);fi.insertBefore(tmp.firstChild,impAnchor)});
+  document.getElementById("q").addEventListener("input",e=>{state.q=norm(e.target.value);render()});
+  const diaSel=document.getElementById("dia");
+  diaSel.addEventListener("change",()=>{state.dia=diaSel.value;render()});
+  document.getElementById("clear").addEventListener("click",()=>{
+    state.plat.clear();state.cat.clear();state.imp.clear();state.q="";document.getElementById("q").value="";
+    document.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed","false"));render();
+  });
+
+  function dias(){
+    const set=new Set();execucoes.forEach(x=>x.data&&set.add(x.data.slice(0,10)));noticias.forEach(n=>n.data&&set.add(n.data.slice(0,10)));
+    const lim=new Date();lim.setDate(lim.getDate()-30);const limIso=lim.toISOString().slice(0,10);
+    return[...set].filter(d=>d>=limIso).sort().reverse();
+  }
+  function fillDias(){
+    const ds=dias();const prev=state.dia;diaSel.textContent="";
+    ds.forEach((d,i)=>{const o=el("option",null,(i===0?"Hoje no radar · ":"")+fmtDia(d));o.value=d;diaSel.append(o)});
+    const all=el("option",null,"Últimos 30 dias");all.value="30d";diaSel.append(all);
+    state.dia=prev&&(prev==="30d"||ds.includes(prev))?prev:(ds[0]||"30d");diaSel.value=state.dia;
+  }
+
+  function header(){
+    const last=[...execucoes].sort((a,b)=>String(b.data).localeCompare(String(a.data)))[0];
+    const up=document.getElementById("updated");up.textContent="";
+    if(last){
+      const when=last.concluido_em||last.data;let txt=fmtDia(when);
+      try{if(String(when).length>10)txt=new Date(when).toLocaleString("pt-BR",{dateStyle:"short",timeStyle:"short"})}catch(e){}
+      up.append("Última atualização: ");up.append(el("strong",null,txt));
+    }else up.textContent="Aguardando a primeira varredura do radar.";
+    const dayItems=state.dia==="30d"?noticias.filter(n=>dias().includes((n.data||"").slice(0,10))):noticias.filter(n=>(n.data||"").slice(0,10)===state.dia);
+    document.getElementById("c-all").textContent=dayItems.length;
+    PLATS.forEach(([k])=>document.getElementById("c-"+k).textContent=dayItems.filter(n=>platKey(n.plataforma)===k).length);
+  }
+
+  function matches(n){
+    const d=(n.data||"").slice(0,10);
+    if(state.dia==="30d"){if(!dias().includes(d))return false}else if(d!==state.dia)return false;
+    if(state.plat.size&&!state.plat.has(platKey(n.plataforma)))return false;
+    if(state.cat.size&&!state.cat.has(n.categoria))return false;
+    if(state.imp.size&&!state.imp.has(impKey(n.impacto)))return false;
+    if(state.q){const hay=norm([n.titulo,n.resumo,n.por_que_importa,n.categoria,n.plataforma,n.fonte_nome].join(" "));if(!state.q.split(/\s+/).every(w=>hay.includes(w)))return false}
+    return true;
+  }
+
+  function card(n){
+    const pk=platKey(n.plataforma);const ik=impKey(n.impacto);const id=n._id;
+    const c=el("article","card p-"+pk+(state.open.has(id)?" open":""));
+    const b=el("button","card-btn");b.type="button";b.setAttribute("aria-expanded",state.open.has(id));
+    const ic=el("span","pico");ic.innerHTML=`<svg aria-hidden="true"><use href="#i-${pk}"></use></svg>`;
+    const main=el("span","card-main");
+    const tags=el("span","tags");
+    const plat=PLATS.find(p=>p[0]===pk);
+    tags.append(el("span","tag plat",plat?plat[1]:n.plataforma),el("span","tag",n.categoria||"Sem categoria"),el("span","tag imp-"+ik,"Impacto "+(IMPS.find(i=>i[0]===ik)[1]).toLowerCase()));
+    if(norm(n.status)==="em teste")tags.append(el("span","tag teste","Em teste / não confirmado"));
+    main.append(tags,el("h3",null,n.titulo),el("p","lede",n.resumo));
+    const ch=el("span","chev");ch.innerHTML='<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>';
+    b.append(ic,main,ch);
+    const body=el("div","card-body");body.hidden=!state.open.has(id);
+    body.append(el("p",null,n.resumo));
+    if(n.por_que_importa){const w=el("div","why");w.append(el("b",null,"Por que importa"),el("span",null,n.por_que_importa));body.append(w)}
+    if(n.correcao)body.append(el("p","nota","Correção: "+n.correcao));
+    const s=el("div","src");
+    if(n.fonte_url&&/^https?:\/\//i.test(n.fonte_url)){const a=el("a",null,(n.fonte_nome||"Fonte")+" ↗");a.href=n.fonte_url;a.target="_blank";a.rel="noopener noreferrer";s.append(a)}
+    else s.append(el("span",null,n.fonte_nome||"Fonte"));
+    s.append(el("span",null,"Publicado em "+fmtDia(n.publicado_em||n.data)));
+    body.append(s);
+    b.addEventListener("click",()=>{state.open.has(id)?state.open.delete(id):state.open.add(id);const o=state.open.has(id);c.classList.toggle("open",o);body.hidden=!o;b.setAttribute("aria-expanded",o)});
+    c.append(b,body);return c;
+  }
+
+  function render(){
+    header();
+    const feed=document.getElementById("feed");feed.textContent="";
+    const order={alto:0,medio:1,baixo:2};
+    const list=noticias.filter(matches).sort((a,b)=>String(b.data).localeCompare(String(a.data))||order[impKey(a.impacto)]-order[impKey(b.impacto)]);
+    const total=noticias.filter(n=>{const d=(n.data||"").slice(0,10);return state.dia==="30d"?dias().includes(d):d===state.dia}).length;
+    document.getElementById("count").textContent=`${list.length} de ${total} ${total===1?"novidade":"novidades"}`;
+    if(!list.length){
+      const e=el("div","empty");e.innerHTML='<svg width="40" height="40" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
+      const filtered=total>0;
+      e.append(el("h2",null,filtered?"Nada com esses filtros":"Nenhuma atualização relevante hoje"),el("p",null,filtered?"Tente tirar um filtro ou mudar a busca.":"O radar varreu as três plataformas e não achou mudança que afete quem trabalha com elas."));
+      feed.append(e);return;
+    }
+    const groups=new Map();list.forEach(n=>{const d=(n.data||"").slice(0,10);if(!groups.has(d))groups.set(d,[]);groups.get(d).push(n)});
+    groups.forEach((items,d)=>{const g=el("section","day-group");g.append(el("h2","day-title",fmtDiaLongo(d)));items.forEach(n=>g.append(card(n)));feed.append(g)});
+  }
+
+  // Dados: lidos de data/radar.json, atualizado a cada execução diária
+  (async()=>{
+    try{
+      const r=await fetch("data/radar.json",{cache:"no-store"});
+      if(!r.ok)throw new Error(r.status);
+      const j=await r.json();
+      noticias=(j.noticias||[]).map(n=>Object.assign({_id:n.id},n));
+      execucoes=j.execucoes||[];
+      fillDias();render();
+    }catch(e){
+      const f=document.getElementById("feed");f.textContent="";const x=el("div","notice");
+      x.append(el("h2",null,"Não foi possível ler o radar agora"),el("p",null,"Recarregue a página em instantes."));f.append(x);
+      document.getElementById("updated").textContent="Dados indisponíveis no momento.";
+    }
+  })();
+
+  // Newsletter: cole aqui o endereço de um formulário (ex.: https://formspree.io/f/xxxxxxx).
+  // Vazio = modo demonstração, que valida o formulário mas não envia nada.
+  const NEWSLETTER_ENDPOINT="";
+  if(!NEWSLETTER_ENDPOINT)document.getElementById("nlDemo").hidden=false;
+  const jaInscritos=()=>{try{return JSON.parse(localStorage.getItem("radar-inscritos")||"[]")}catch(e){return[]}};
+  const marcarInscrito=email=>{try{localStorage.setItem("radar-inscritos",JSON.stringify([...new Set([...jaInscritos(),email])]))}catch(e){}};
+
+  // Newsletter
+  const form=document.getElementById("nl"),emailIn=document.getElementById("email"),cons=document.getElementById("consent"),msg=document.getElementById("nlMsg"),btn=document.getElementById("nlBtn");
+  const say=(t,k)=>{msg.textContent=t;msg.className="msg "+(k||"")};
+  const EMAIL_RE=/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+  emailIn.addEventListener("input",()=>emailIn.removeAttribute("aria-invalid"));
+  form.addEventListener("submit",async ev=>{
+    ev.preventDefault();
+    const email=emailIn.value.trim().toLowerCase();
+    if(!EMAIL_RE.test(email)){emailIn.setAttribute("aria-invalid","true");say("Digite um e-mail válido, como nome@empresa.com.br.","err");emailIn.focus();return}
+    if(!cons.checked){say("Marque a caixa de consentimento para concluir a inscrição.","err");cons.focus();return}
+    if(jaInscritos().includes(email)){say("Este e-mail já está inscrito no Radar.","err");return}
+    if(!NEWSLETTER_ENDPOINT){say("Tudo certo com o formulário. Esta é uma demonstração, então nenhum e-mail foi cadastrado.","ok");form.reset();return}
+    btn.disabled=true;say("Enviando…");
+    try{
+      const r=await fetch(NEWSLETTER_ENDPOINT,{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},body:JSON.stringify({email,data:new Date().toISOString(),consentimento:"Aceito receber o Radar Social por e-mail e posso cancelar quando quiser"})});
+      if(!r.ok)throw new Error(r.status);
+      marcarInscrito(email);
+      say("Inscrição feita. O próximo Radar chega no seu e-mail.","ok");
+      form.reset();
+    }catch(e){
+      say("Não conseguimos salvar sua inscrição. Tente de novo em instantes.","err");
+    }finally{btn.disabled=false}
+  });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+{
+  "execucoes": [
+    {
+      "data": "2026-10-26",
+      "concluido_em": "2026-10-26T18:30:00-03:00",
+      "janela": "72h (segunda-feira: 23/10 a 26/10)",
+      "itens": { "tiktok": 1, "instagram": 3, "facebook": 3 },
+      "total": 7,
+      "status": "ok"
+    }
+  ],
+  "noticias": [
+    {
+      "id": "2026-10-26-instagram-testa-features-videos-longos",
+      "data": "2026-10-26",
+      "publicado_em": "2026-10-26",
+      "plataforma": "Instagram",
+      "categoria": "Criadores",
+      "impacto": "Médio",
+      "titulo": "Instagram testa Features, formato de vídeos longos e horizontais, com criadores no Brasil",
+      "resumo": "O Instagram começou a testar o Features, um formato de vídeos longos e na horizontal integrado aos Reels, nos EUA e com alguns criadores brasileiros. No mesmo pacote estão em teste clipes curtos que levam ao vídeo completo, séries de Reels organizadas como episódios e melhorias para achar transmissões ao vivo. A empresa não deu data para liberar a todos.",
+      "por_que_importa": "Abre espaço para podcasts, entrevistas e especiais completos dentro do Instagram, competindo diretamente com o YouTube pela atenção e pelo conteúdo dos criadores.",
+      "status": "em teste",
+      "fonte_nome": "Olhar Digital",
+      "fonte_url": "https://olhardigital.com.br/2026/10/26/internet-e-redes-sociais/instagram-comeca-a-testar-videos-longos-e-horizontais-no-brasil/"
+    },
+    {
+      "id": "2026-10-26-instagram-seu-algoritmo-app-inteiro",
+      "data": "2026-10-26",
+      "publicado_em": "2026-10-23",
+      "plataforma": "Instagram",
+      "categoria": "Algoritmo",
+      "impacto": "Médio",
+      "titulo": "Controle \"Seu algoritmo\" sai da aba Reels e passa a valer no Instagram inteiro",
+      "resumo": "O recurso que mostra os temas ligados aos interesses do usuário, e deixa pedir mais ou menos de cada um, foi ampliado da aba Reels para todo o app. A Meta também levou a ferramenta ao Facebook. Tessa Lyons, VP de produto do Instagram, comentou a mudança em entrevista à CNN.",
+      "por_que_importa": "Quando o usuário edita os próprios temas, a distribuição passa a depender menos do histórico de cliques e mais de tema claro: perfis de nicho bem definido tendem a ganhar.",
+      "status": "confirmado",
+      "fonte_nome": "Olhar Digital (cita entrevista à CNN)",
+      "fonte_url": "https://olhardigital.com.br/2026/10/23/internet-e-redes-sociais/redes-sociais-lancam-funcoes-para-voce-controlar-o-seu-proprio-feed"
+    },
+    {
+      "id": "2026-10-26-instagram-edits-iphone-duo-desktop",
+      "data": "2026-10-26",
+      "publicado_em": "2026-10-25",
+      "plataforma": "Instagram",
+      "categoria": "Criadores",
+      "impacto": "Baixo",
+      "titulo": "Edits, o editor de vídeo do Instagram, chega ao iPhone Duo e testa versão para computador",
+      "resumo": "A Meta lançou uma versão do Edits adaptada à tela dobrável do iPhone Duo, com linha do tempo e prévia lado a lado. A versão para desktop, anunciada em junho, está em teste com criadores selecionados. Adam Mosseri disse que o desktop deve ser a base para novos recursos.",
+      "por_que_importa": "Editar Reels no computador encurta o fluxo de equipes e agências que hoje dependem de editores de terceiros.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/edits-comes-to-iphone-duo-and-desktop/833909/"
+    },
+    {
+      "id": "2026-10-26-facebook-links-pagos-meta-one",
+      "data": "2026-10-26",
+      "publicado_em": "2026-10-23",
+      "plataforma": "Facebook",
+      "categoria": "Anúncios e monetização",
+      "impacto": "Médio",
+      "titulo": "Facebook limita páginas a dois links por mês e cobra pelos extras no Meta One",
+      "resumo": "Em teste, algumas páginas do Facebook só podem publicar dois links por mês; para mais, é preciso assinar um plano Meta One, de US$ 49,99 (8 links) a US$ 499,99 (ilimitado). O plano de US$ 14,99 não inclui links extras. Páginas de governos locais e ONGs foram atingidas, e a Meta diz que ONGs precisam usar a categoria \"nonprofit\" para ficar de fora.",
+      "por_que_importa": "Se o teste se ampliar, levar tráfego do Facebook para site ou e-commerce passa a ter custo fixo, e a estratégia de páginas precisa ser revista.",
+      "status": "em teste",
+      "fonte_nome": "Engadget",
+      "fonte_url": "https://www.engadget.com/2295422/meta-is-charging-government-and-nonprofit-pages-to-post-links-on-facebook/"
+    },
+    {
+      "id": "2026-10-26-meta-adia-termos-comerciais",
+      "data": "2026-10-26",
+      "publicado_em": "2026-10-23",
+      "plataforma": "Facebook",
+      "categoria": "Políticas e privacidade",
+      "impacto": "Médio",
+      "titulo": "Meta adia para 20 de novembro os novos termos comerciais para empresas",
+      "resumo": "Os termos comerciais que valeriam em 30 de outubro foram adiados para 20 de novembro, após críticas de anunciantes e veículos. A primeira versão permitia à Meta usar crawlers em sites ligados a contas comerciais e treinar produtos com esse conteúdo; as menções a treinamento foram retiradas. A Meta diz que robots.txt continua valendo e que o adiamento não cancela a mudança. Vale para Facebook, Instagram e demais serviços da Meta.",
+      "por_que_importa": "Toda empresa que anuncia na Meta vai aceitar esses termos; revise o robots.txt do site e acompanhe a versão final antes de 20/11.",
+      "status": "confirmado",
+      "fonte_nome": "Tecnoblog",
+      "fonte_url": "https://tecnoblog.net/noticias/meta-adia-mudanca-nos-termos-apos-reacao-negativa/"
+    },
+    {
+      "id": "2026-10-26-meta-guia-campanhas-dados",
+      "data": "2026-10-26",
+      "publicado_em": "2026-10-25",
+      "plataforma": "Facebook",
+      "categoria": "Anúncios e monetização",
+      "impacto": "Baixo",
+      "titulo": "Meta orienta anunciantes a deixar campanhas acumularem dados antes de mexer",
+      "resumo": "Um novo guia de boas práticas da Meta trata cada campanha como um briefing: evento de otimização, orçamento, lance e atribuição dizem ao sistema o que buscar. A referência é cerca de 50 conversões por semana por conjunto de anúncios; abaixo disso, segundo a análise da Meta, o custo por compra fica em média 28% maior.",
+      "por_que_importa": "Ajustes frequentes e conjuntos pulverizados encarecem a compra; consolidar verba em menos conjuntos tende a baixar o custo.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/meta-says-advertisers-should-let-campaigns-gather-data/833906/"
+    },
+    {
+      "id": "2026-10-26-tiktok-relatorio-q2-contas-falsas",
+      "data": "2026-10-26",
+      "publicado_em": "2026-10-25",
+      "plataforma": "TikTok",
+      "categoria": "Políticas e privacidade",
+      "impacto": "Baixo",
+      "titulo": "TikTok nos EUA remove 14,6 milhões de contas falsas e 781 milhões de seguidores falsos no 2º trimestre",
+      "resumo": "O relatório de segurança da operação americana do TikTok (abril a junho) aponta 14,6 milhões de contas falsas removidas, 64,8 milhões de contas de spam barradas e 781,4 milhões de seguidores falsos eliminados. Também cresceu o número de lives desmonetizadas ou advertidas, e 30 redes de influência encoberta foram derrubadas.",
+      "por_que_importa": "Limpezas desse porte derrubam contagens de seguidores e engajamento aparente; confira métricas de criadores antes de fechar parcerias.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/tiktok-us-shares-q2-account-enforcement-data/833907/"
+    }
+  ]
+}
