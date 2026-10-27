@@ -1,6 +1,14 @@
 {
   "execucoes": [
     {
+      "data": "2026-10-27",
+      "concluido_em": "2026-10-27T10:30:00-03:00",
+      "janela": "24h (27/10)",
+      "itens": { "tiktok": 2, "instagram": 0, "facebook": 1 },
+      "total": 3,
+      "status": "ok"
+    },
+    {
       "data": "2026-10-26",
       "concluido_em": "2026-10-26T18:30:00-03:00",
       "janela": "72h (segunda-feira: 23/10 a 26/10)",
@@ -10,6 +18,48 @@
     }
   ],
   "noticias": [
+    {
+      "id": "2026-10-27-meta-navegacao-produtos-anuncios-ativos",
+      "data": "2026-10-27",
+      "publicado_em": "2026-10-23",
+      "plataforma": "Facebook",
+      "categoria": "Anúncios e monetização",
+      "impacto": "Alto",
+      "titulo": "Meta liga a navegação de produtos nos anúncios ativos a partir de 28/10, a menos que o anunciante desative",
+      "resumo": "Segundo aviso enviado pela Meta a anunciantes em 14 de outubro, relatado pela agência Common Thread Collective, a navegação de produtos passa a valer em 28/10 para anúncios do Facebook e do Instagram que estiverem rodando. Com ela, o toque no anúncio pode abrir uma página da Meta montada com fotos e preços do catálogo, com sugestões personalizadas que podem incluir produtos de outras lojas, antes de levar ao site. O controle fica nas configurações de criativo Advantage+ de cada anúncio; a Meta cita alta de 3% nas conversões em teste próprio, mas não publicou documentação oficial sobre a mudança.",
+      "por_que_importa": "E-commerces podem ver menos sessões no site e no GA4 sem queda nos resultados do Gerenciador de Anúncios; decida hoje se desativa ou testa, e revise o catálogo, que alimenta essa página.",
+      "status": "em teste",
+      "fonte_nome": "BuildMVPFast (cita aviso relatado pela Common Thread Collective)",
+      "fonte_url": "https://www.buildmvpfast.com/blog/meta-product-browsing-ads-opt-out-october-28-2026"
+    },
+    {
+      "id": "2026-10-27-tiktok-shop-calendario-fim-de-ano",
+      "data": "2026-10-27",
+      "publicado_em": "2026-10-26",
+      "plataforma": "TikTok",
+      "categoria": "Comércio",
+      "impacto": "Médio",
+      "titulo": "TikTok Shop abre hoje calendário de campanhas de fim de ano, com 11.11, Black Friday e 12.12",
+      "resumo": "O calendário promocional do TikTok Shop começa em 27/10 e vai até dezembro, com cada período dedicado a categorias específicas: casa e cozinha abrem a programação, Black Friday tem campanhas a partir de 12/11 e descontos gerais de 18/11 a 3/12. A plataforma promete cupons, ofertas relâmpago, frete grátis e parcelamento em até 12 vezes sem juros, conforme as regras de cada promoção. As vendas podem vir de vídeos, lives e posts de criadores, com checkout dentro do app.",
+      "por_que_importa": "Vendedores e afiliados conseguem planejar estoque, conteúdo e lives para a janela da própria categoria, em vez de disputar atenção na Black Friday inteira.",
+      "status": "confirmado",
+      "fonte_nome": "E-Commerce Brasil",
+      "fonte_url": "https://www.ecommercebrasil.com.br/noticias/tiktok-shop-calendario-promocoes-11-11-black-friday-2026"
+    },
+    {
+      "id": "2026-10-27-tiktok-guia-topview-pulse",
+      "data": "2026-10-27",
+      "publicado_em": "2026-10-26",
+      "plataforma": "TikTok",
+      "categoria": "Anúncios e monetização",
+      "impacto": "Baixo",
+      "titulo": "TikTok publica guia sobre TopView e Pulse para campanhas em grandes eventos e datas do fim de ano",
+      "resumo": "O TikTok lançou um guia de 12 páginas sobre seus formatos premium: o TopView, que garante o primeiro anúncio visto ao abrir o app em um dia, e a família Pulse, que posiciona anúncios ao lado de conteúdo de grandes publishers e de assuntos em alta. O material traz dados de engajamento em eventos como Super Bowl e final da Copa e notas sobre o comportamento no fim e no começo do ano. Não há produto novo; estimativas de mercado citadas apontam custo mínimo de cerca de US$ 50 mil por dia para o TopView.",
+      "por_que_importa": "Ajuda a justificar ou descartar formatos de reserva para lançamentos e datas sazonais, mas o custo os deixa restritos a marcas com verba de grande porte.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/tiktok-playbook-outlines-the-value-of-its-high-end-ad-options/872827/"
+    },
     {
       "id": "2026-10-26-instagram-testa-features-videos-longos",
       "data": "2026-10-26",
