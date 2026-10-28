@@ -4,8 +4,8 @@
       "data": "2026-10-28",
       "concluido_em": "2026-10-28T11:00:00-03:00",
       "janela": "24h (28/10)",
-      "itens": { "tiktok": 0, "instagram": 1, "facebook": 1 },
-      "total": 2,
+      "itens": { "tiktok": 1, "instagram": 1, "facebook": 1 },
+      "total": 3,
       "status": "ok"
     },
     {
@@ -26,6 +26,20 @@
     }
   ],
   "noticias": [
+    {
+      "id": "2026-10-28-tiktok-must-eat-guia-restaurantes",
+      "data": "2026-10-28",
+      "publicado_em": "2026-10-28",
+      "plataforma": "TikTok",
+      "categoria": "Recursos",
+      "impacto": "Baixo",
+      "titulo": "TikTok lança Must Eat, guia de restaurantes montado com vídeos e comentários dos usuários",
+      "resumo": "O Must Eat reúne recomendações de restaurantes a partir de mais de 40 milhões de posts e comentários, com filtros por culinária, preço, nota e localização. Estreia em Nova York, Los Angeles e São Francisco e aparece na busca, no feed Local, nas páginas de restaurantes e nos links de localização dos vídeos. Alguns restaurantes podem ser reservados dentro do TikTok via OpenTable.",
+      "por_que_importa": "Ainda é só nos EUA, mas sinaliza o TikTok como buscador local: para restaurantes e criadores de gastronomia, vídeos com localização marcada passam a gerar descoberta e reserva.",
+      "status": "confirmado",
+      "fonte_nome": "TechCrunch",
+      "fonte_url": "https://techcrunch.com/2026/10/28/tiktok-expands-into-restaurant-guides-with-must-eat-feature/"
+    },
     {
       "id": "2026-10-28-meta-desempenho-por-elemento-criativo",
       "data": "2026-10-28",
