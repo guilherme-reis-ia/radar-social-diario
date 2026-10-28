@@ -1,6 +1,14 @@
 {
   "execucoes": [
     {
+      "data": "2026-10-28",
+      "concluido_em": "2026-10-28T11:00:00-03:00",
+      "janela": "24h (28/10)",
+      "itens": { "tiktok": 0, "instagram": 1, "facebook": 1 },
+      "total": 2,
+      "status": "ok"
+    },
+    {
       "data": "2026-10-27",
       "concluido_em": "2026-10-27T10:30:00-03:00",
       "janela": "24h (27/10)",
@@ -18,6 +26,34 @@
     }
   ],
   "noticias": [
+    {
+      "id": "2026-10-28-meta-desempenho-por-elemento-criativo",
+      "data": "2026-10-28",
+      "publicado_em": "2026-10-27",
+      "plataforma": "Facebook",
+      "categoria": "Anúncios e monetização",
+      "impacto": "Médio",
+      "titulo": "Gerenciador de Anúncios da Meta passa a mostrar o desempenho de cada imagem, vídeo e texto do anúncio",
+      "resumo": "A opção Detalhamento do Gerenciador de Anúncios agora separa os resultados por elemento criativo: dá para ver como cada imagem ou vídeo se saiu sozinho e como cada variação de texto performou. Anúncios configurados para exibir como coleção ou carrossel ficam de fora, assim como algumas conversões personalizadas, como Doar e Assinar. Vale para anúncios do Facebook e do Instagram; a Meta não informou cronograma de liberação.",
+      "por_que_importa": "Com o Advantage+ misturando criativos automaticamente, saber qual peça e qual texto puxam o resultado ajuda a cortar o que não funciona e embasar o briefing da próxima produção.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/meta-adds-individual-performance-data-for-ad-creative/872981/"
+    },
+    {
+      "id": "2026-10-28-edits-halloween-legendas-carrossel-android",
+      "data": "2026-10-28",
+      "publicado_em": "2026-10-27",
+      "plataforma": "Instagram",
+      "categoria": "Criadores",
+      "impacto": "Baixo",
+      "titulo": "Edits ganha efeitos sincronizados com a música, edição de legendas em lote e editor de carrossel no Android",
+      "resumo": "O Edits, editor de vídeo do Instagram, recebeu fontes, sons e animações de Halloween, 13 novas animações de texto e efeitos, como luzes piscando e zoom, que acompanham automaticamente a batida do áudio. Também chegaram novos estilos de legenda com edição em lote, ajuste automático de cor e brilho e volume de até 150% por clipe. O editor de carrossel, antes só no iOS, foi liberado no Android.",
+      "por_que_importa": "Legendas em lote e efeitos que seguem o ritmo da música aceleram a produção de Reels; quem usa Android já pode montar carrosséis direto no app.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/edits-gets-new-halloween-themed-options/872983/"
+    },
     {
       "id": "2026-10-27-australia-opcao-sem-algoritmo",
       "data": "2026-10-27",
