@@ -1,6 +1,14 @@
 {
   "execucoes": [
     {
+      "data": "2026-10-29",
+      "concluido_em": "2026-10-29T11:30:00-03:00",
+      "janela": "24h (29/10)",
+      "itens": { "tiktok": 0, "instagram": 1, "facebook": 1 },
+      "total": 2,
+      "status": "ok"
+    },
+    {
       "data": "2026-10-28",
       "concluido_em": "2026-10-28T11:00:00-03:00",
       "janela": "24h (28/10)",
@@ -26,6 +34,34 @@
     }
   ],
   "noticias": [
+    {
+      "id": "2026-10-29-meta-ranking-anuncios-ia-resultados",
+      "data": "2026-10-29",
+      "publicado_em": "2026-10-28",
+      "plataforma": "Facebook",
+      "categoria": "Anúncios e monetização",
+      "impacto": "Médio",
+      "titulo": "Meta atribui alta de cliques e conversões às melhorias nos modelos de IA que entregam os anúncios",
+      "resumo": "Segundo a Meta, ajustes nos sistemas Andromeda (que busca os anúncios candidatos), GEM e GenRecs geraram 8,3% mais cliques e 15,7% mais conversões no Facebook no 2º trimestre; os novos modelos também preveem melhor o desempenho de anúncios recém-criados, ainda sem histórico. A empresa diz que o assistente de IA para anunciantes está sendo liberado aos poucos e que os anúncios de parceria com criadores cresceram mais de 97% em um ano. A Meta também desenvolve checkout dentro dos seus agentes de IA, como o Muse.",
+      "por_que_importa": "O sistema depende cada vez mais de variedade de criativos e de bons sinais de conversão do que de segmentação manual; anúncios de parceria com criadores ganham peso no planejamento de mídia.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/meta-says-its-expanded-processing-capacity-is-driving-ad-results/873133/"
+    },
+    {
+      "id": "2026-10-29-mosseri-pagamentos-criadores-conteudo-ia",
+      "data": "2026-10-29",
+      "publicado_em": "2026-10-28",
+      "plataforma": "Instagram",
+      "categoria": "Criadores",
+      "impacto": "Médio",
+      "titulo": "Mosseri diz que pagar criadores por vídeo dá prejuízo e que conteúdo de IA tende a ranquear pior",
+      "resumo": "Em entrevista ao Colin and Samir Show, Adam Mosseri disse que o programa de pagamentos por vídeo do Instagram tem retorno negativo e não deve ser ampliado, e que a maioria dos criadores ganha mesmo com marcas. Sobre os vídeos longos em teste, a Meta diz ser cedo para definir um modelo de monetização, embora financie alguns criadores diretamente. Mosseri também afirmou que contas de IA não são tratadas de forma diferente, mas que o ranking provavelmente ainda não favorece conteúdo de IA como o feito por pessoas, e que personagens criados por IA terão de se identificar.",
+      "por_que_importa": "Não conte com pagamentos da plataforma no Instagram: a receita do criador segue vindo de publis. Conteúdo original e feito por pessoas continua sendo a aposta mais segura para alcance.",
+      "status": "confirmado",
+      "fonte_nome": "Net Influencer (entrevista ao Colin and Samir Show)",
+      "fonte_url": "https://www.netinfluencer.com/instagram-head-says-video-creator-payments-lose-money-as-platform-tests-long-form-video/"
+    },
     {
       "id": "2026-10-28-tiktok-must-eat-guia-restaurantes",
       "data": "2026-10-28",
