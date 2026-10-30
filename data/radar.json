@@ -1,6 +1,14 @@
 {
   "execucoes": [
     {
+      "data": "2026-10-30",
+      "concluido_em": "2026-10-30T09:40:00-03:00",
+      "janela": "24h (29/10 a 30/10)",
+      "itens": { "tiktok": 0, "instagram": 1, "facebook": 1 },
+      "total": 2,
+      "status": "ok"
+    },
+    {
       "data": "2026-10-29",
       "concluido_em": "2026-10-29T11:30:00-03:00",
       "janela": "24h (29/10)",
@@ -34,6 +42,34 @@
     }
   ],
   "noticias": [
+    {
+      "id": "2026-10-30-facebook-alerta-pais-buscas-automutilacao",
+      "data": "2026-10-30",
+      "publicado_em": "2026-10-29",
+      "plataforma": "Facebook",
+      "categoria": "Políticas e privacidade",
+      "impacto": "Baixo",
+      "titulo": "Facebook passa a alertar pais quando adolescente busca repetidamente conteúdo de automutilação",
+      "resumo": "A Meta estendeu ao Facebook os alertas que o Instagram já enviava desde o início do ano: pais que supervisionam a conta do adolescente são avisados se ele buscar repetidamente, em pouco tempo, termos ligados a suicídio ou automutilação. Conversas com o Meta AI que indiquem esse risco também geram alerta. O aviso não mostra os termos nem o conteúdo das conversas e traz recursos de apoio; a Meta não informou o critério exato nem os países.",
+      "por_que_importa": "Reforça a vigilância sobre o que adolescentes buscam e veem; marcas e criadores com público jovem devem redobrar o cuidado com temas sensíveis de saúde mental.",
+      "status": "confirmado",
+      "fonte_nome": "Engadget",
+      "fonte_url": "https://www.engadget.com/2301410/meta-will-now-alert-parents-if-teens-repeatedly-search-for-self-harm-content-on-facebook/"
+    },
+    {
+      "id": "2026-10-30-justica-trabalho-meta-remover-posts-demissao-voto",
+      "data": "2026-10-30",
+      "publicado_em": "2026-10-30",
+      "plataforma": "Instagram",
+      "categoria": "Políticas e privacidade",
+      "impacto": "Baixo",
+      "titulo": "Justiça do Trabalho manda Meta remover posts que incentivam demitir funcionários pelo voto",
+      "resumo": "Em liminar pedida pelo Ministério Público do Trabalho, a 77ª Vara do Trabalho de São Paulo mandou a Meta remover em 24 horas posts do Instagram que estimulam empregadores a vigiar, expor e demitir trabalhadores por posição política. A empresa também terá de exibir por cinco dias, no Instagram, Threads e Facebook, avisos contra discriminação e assédio eleitoral, e avisar os donos dos perfis em até 48 horas. O MPT pede R$ 50 milhões por dano moral coletivo, a ser decidido no julgamento.",
+      "por_que_importa": "Perfis de empresas e de gestores podem ter posts removidos por ordem judicial; evite qualquer conteúdo que associe vínculo de trabalho a voto.",
+      "status": "confirmado",
+      "fonte_nome": "Olhar Digital",
+      "fonte_url": "https://olhardigital.com.br/2026/10/30/pro/justica-manda-meta-apagar-posts-que-incentivam-demissao-por-voto"
+    },
     {
       "id": "2026-10-29-meta-ranking-anuncios-ia-resultados",
       "data": "2026-10-29",
