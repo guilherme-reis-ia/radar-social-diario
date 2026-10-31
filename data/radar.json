@@ -1,6 +1,14 @@
 {
   "execucoes": [
     {
+      "data": "2026-10-31",
+      "concluido_em": "2026-10-31T09:30:00-03:00",
+      "janela": "24h (30/10 a 31/10)",
+      "itens": { "tiktok": 0, "instagram": 0, "facebook": 0 },
+      "total": 0,
+      "status": "ok (sem novidades)"
+    },
+    {
       "data": "2026-10-30",
       "concluido_em": "2026-10-30T09:40:00-03:00",
       "janela": "24h (29/10 a 30/10)",
