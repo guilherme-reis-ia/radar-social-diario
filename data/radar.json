@@ -1,6 +1,14 @@
 {
   "execucoes": [
     {
+      "data": "2026-11-03",
+      "concluido_em": "2026-11-03T16:05:00-03:00",
+      "janela": "24h (02/11 a 03/11), mais 01/11 por falta da execução de segunda",
+      "itens": { "tiktok": 1, "instagram": 1, "facebook": 2 },
+      "total": 4,
+      "status": "ok"
+    },
+    {
       "data": "2026-10-31",
       "concluido_em": "2026-10-31T09:30:00-03:00",
       "janela": "24h (30/10 a 31/10)",
@@ -50,6 +58,62 @@
     }
   ],
   "noticias": [
+    {
+      "id": "2026-11-03-meta-termos-comerciais-adiamento-indefinido",
+      "data": "2026-11-03",
+      "publicado_em": "2026-11-02",
+      "plataforma": "Facebook",
+      "categoria": "Políticas e privacidade",
+      "impacto": "Alto",
+      "titulo": "Meta pode adiar sem prazo os novos termos comerciais, que agora estão sob investigação no Reino Unido",
+      "resumo": "Depois de mover a entrada em vigor para 20 de novembro, a Meta indicou, segundo a Reuters, que pode adiar por tempo indeterminado a atualização dos termos comerciais para contas empresariais do Facebook e do Instagram. A CMA, autoridade de concorrência do Reino Unido, teria aberto investigação, e o European Publishers Council avalia os próximos passos. A prévia dos termos publicada pela Meta ainda traz 20/11 como data de vigência; a empresa nega que o objetivo seja raspar sites e diz que os dados servem à segmentação de anúncios.",
+      "por_que_importa": "A data de 20/11 deixou de ser certa: acompanhe a página oficial dos termos antes de orientar clientes, e mantenha a revisão jurídica sobre o uso de dados dos sites ligados às contas de anúncio.",
+      "status": "em teste",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/meta-delays-commercial-terms-update-indefinitely/873528/"
+    },
+    {
+      "id": "2026-11-03-meta-assistente-criadores-ia-atualizacao",
+      "data": "2026-11-03",
+      "publicado_em": "2026-11-02",
+      "plataforma": "Facebook",
+      "categoria": "Criadores",
+      "impacto": "Médio",
+      "titulo": "Assistente de IA da Meta para criadores ganha alertas de tendência, roteiros e respostas automáticas a comentários",
+      "resumo": "A Meta atualizou o assistente de IA para criadores do Facebook e do Instagram, lançado em junho. Ele passa a avisar sobre tendências do nicho do criador, gera storyboards e listas de cenas a partir de uma ideia, comenta rascunhos enviados e sugere respostas a comentários no tom do criador. O assistente também chegou à versão web do Painel de Criadores; a Meta não detalhou países nem se a liberação é gradual.",
+      "por_que_importa": "Pode agilizar planejamento de pauta e gestão de comentários; vale testar, mas revise as respostas automáticas antes de publicar para não perder o tom da marca.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/meta-updates-creator-assistant-chatbot/873524/"
+    },
+    {
+      "id": "2026-11-03-tiktok-central-seguranca-de-marca",
+      "data": "2026-11-03",
+      "publicado_em": "2026-11-02",
+      "plataforma": "TikTok",
+      "categoria": "Anúncios e monetização",
+      "impacto": "Baixo",
+      "titulo": "TikTok lança Central de Segurança de Marca com guias e novas ferramentas de proteção para anunciantes",
+      "resumo": "Anunciada em um fórum do setor em Singapura, a Brand Safety Center reúne vídeos de especialistas, um guia de proteção de marca e um material sobre uso seguro de IA na publicidade. O TikTok também apresentou uma ferramenta de percepção de marca no Business Center, opções de denúncia de violação de direitos autorais e de marca registrada e proteções contra falsificação para vendedores. Segundo a empresa, 97,4% das remoções de vídeos no trimestre foram feitas por moderação automática.",
+      "por_que_importa": "Os materiais ajudam a responder a clientes preocupados com o contexto dos anúncios, e as denúncias de marca registrada e falsificação interessam a quem vende no TikTok Shop.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/tiktok-adds-new-brand-safety-resources/873529/"
+    },
+    {
+      "id": "2026-11-03-instagram-paga-criadores-features",
+      "data": "2026-11-03",
+      "publicado_em": "2026-11-01",
+      "plataforma": "Instagram",
+      "categoria": "Criadores",
+      "impacto": "Médio",
+      "titulo": "Instagram oferece até US$ 500 mil a criadores para publicar vídeos longos no Features",
+      "resumo": "Segundo o Business Insider, o Instagram ofereceu a criadores selecionados de US$ 50 mil a US$ 500 mil para publicar no Features, o formato em teste de vídeos horizontais de até 90 minutos. Um porta-voz da Meta confirmou que a empresa está financiando conteúdo diretamente com alguns criadores, sem comentar valores. Adam Mosseri disse no Threads que a remuneração de vídeos longos é decisiva e que a equipe estuda formas de pagar esses criadores.",
+      "por_que_importa": "Como o Brasil está entre os mercados do teste do Features, criadores e agências daqui devem acompanhar a chegada de acordos pagos e de monetização para vídeo longo no Instagram.",
+      "status": "em teste",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/instagram-offers-to-pay-creators-for-long-form-content/873402/"
+    },
     {
       "id": "2026-10-30-facebook-alerta-pais-buscas-automutilacao",
       "data": "2026-10-30",
