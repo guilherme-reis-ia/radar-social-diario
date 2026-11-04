@@ -1,6 +1,14 @@
 {
   "execucoes": [
     {
+      "data": "2026-11-04",
+      "concluido_em": "2026-11-04T08:45:00-03:00",
+      "janela": "24h (03/11 a 04/11)",
+      "itens": { "tiktok": 0, "instagram": 0, "facebook": 0 },
+      "total": 0,
+      "status": "ok (sem novidades)"
+    },
+    {
       "data": "2026-11-03",
       "concluido_em": "2026-11-03T16:05:00-03:00",
       "janela": "24h (02/11 a 03/11), mais 01/11 por falta da execução de segunda",
