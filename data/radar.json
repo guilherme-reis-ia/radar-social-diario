@@ -1,6 +1,14 @@
 {
   "execucoes": [
     {
+      "data": "2026-11-05",
+      "concluido_em": "2026-11-05T13:35:00-03:00",
+      "janela": "24h (04/11 a 05/11)",
+      "itens": { "tiktok": 0, "instagram": 1, "facebook": 1 },
+      "total": 2,
+      "status": "ok"
+    },
+    {
       "data": "2026-11-04",
       "concluido_em": "2026-11-04T08:45:00-03:00",
       "janela": "24h (03/11 a 04/11)",
@@ -66,6 +74,34 @@
     }
   ],
   "noticias": [
+    {
+      "id": "2026-11-05-facebook-creator-fast-track-brasil",
+      "data": "2026-11-05",
+      "publicado_em": "2026-11-04",
+      "plataforma": "Facebook",
+      "categoria": "Criadores",
+      "impacto": "Alto",
+      "titulo": "Facebook leva ao Brasil o Creator Fast Track, que paga criadores de outras redes para postar Reels",
+      "resumo": "O programa, lançado em março nos EUA e no Canadá, chegou ao Brasil para criadores com pelo menos 20 mil seguidores no Instagram, TikTok ou YouTube, 30 mil visualizações nos últimos 30 dias e nenhum Reel no Facebook nos últimos seis meses. Os aprovados precisam publicar ao menos 20 Reels originais por período de 30 dias, em dias diferentes, durante três meses; vale repostar vídeos de outras redes que ainda não estejam na página do Facebook. O pagamento é garantido e depende do maior número de seguidores numa única conta vinculada, indo de US$ 75 a US$ 900 no total, valores bem abaixo dos oferecidos na América do Norte.",
+      "por_que_importa": "É uma porta de entrada de baixo esforço para criadores brasileiros que já têm acervo em outras redes testarem o alcance do Facebook, mas o valor baixo e a exigência de 20 Reels por mês pedem cálculo antes de aderir.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/facebook-expands-creator-fast-track-program-to-brazil/873821/"
+    },
+    {
+      "id": "2026-11-05-instagram-explorar-destaca-videos-longos",
+      "data": "2026-11-05",
+      "publicado_em": "2026-11-04",
+      "plataforma": "Instagram",
+      "categoria": "Algoritmo",
+      "impacto": "Baixo",
+      "titulo": "Instagram destaca vídeos longos no topo do Explorar para parte dos usuários",
+      "resumo": "Capturas de tela divulgadas pela especialista em economia dos criadores Lia Haberman mostram vídeos longos ocupando um espaço de destaque no topo do Explorar para alguns usuários. A exibição faz parte do esforço para impulsionar o Features, o formato de vídeos longos em teste, junto com pagamentos pontuais a grandes criadores. A Meta não anunciou oficialmente o destaque nem informou em quais países ele aparece.",
+      "por_que_importa": "Se o espaço se ampliar, quem já testa vídeos longos no Instagram ganha uma vitrine de descoberta fora do feed de seguidores; vale acompanhar o alcance vindo do Explorar nos insights.",
+      "status": "em teste",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/instagram-tries-to-entice-long-form-creators/873820/"
+    },
     {
       "id": "2026-11-03-meta-termos-comerciais-adiamento-indefinido",
       "data": "2026-11-03",
