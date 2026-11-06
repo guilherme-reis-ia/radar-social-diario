@@ -1,6 +1,14 @@
 {
   "execucoes": [
     {
+      "data": "2026-11-06",
+      "concluido_em": "2026-11-06T10:30:00-03:00",
+      "janela": "24h (05/11 a 06/11)",
+      "itens": { "tiktok": 1, "instagram": 2, "facebook": 1 },
+      "total": 4,
+      "status": "ok"
+    },
+    {
       "data": "2026-11-05",
       "concluido_em": "2026-11-05T13:35:00-03:00",
       "janela": "24h (04/11 a 05/11)",
@@ -74,6 +82,62 @@
     }
   ],
   "noticias": [
+    {
+      "id": "2026-11-06-meta-api-v27-alcance-dispositivos-vitrine",
+      "data": "2026-11-06",
+      "publicado_em": "2026-11-05",
+      "plataforma": "Facebook",
+      "categoria": "Anúncios e monetização",
+      "impacto": "Médio",
+      "titulo": "Nova versão da API de Marketing da Meta amplia alcance de campanhas de vendas e pode ligar a vitrine de produtos sozinha",
+      "resumo": "Com a Graph API v27.0 e a Marketing API v27, conjuntos de anúncios de vendas segmentados para dispositivos ou sistemas operacionais específicos passam a alcançar outros aparelhos por padrão, e a Meta pode ativar automaticamente a vitrine de produtos em anúncios criados via API; nos dois casos é possível desligar manualmente. Apps também poderão marcar ou remover a indicação de conteúdo gerado por IA em posts. A métrica de taxa total de consumo de vídeo será descontinuada, e alguns recursos técnicos da API deixaram de valer para apps novos desde 4/11. Vale para Facebook e Instagram.",
+      "por_que_importa": "Quem sobe campanhas por ferramentas de terceiros pode ver a segmentação por dispositivo e o formato do anúncio mudarem sem perceber; confira as configurações após a atualização e ajuste relatórios que usam a métrica de vídeo descontinuada.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/meta-adds-new-capabilities-to-graph-and-marketing-api/873951/"
+    },
+    {
+      "id": "2026-11-06-tiktok-shop-app-independente-asia",
+      "data": "2026-11-06",
+      "publicado_em": "2026-11-05",
+      "plataforma": "TikTok",
+      "categoria": "Comércio",
+      "impacto": "Baixo",
+      "titulo": "TikTok lança app separado do TikTok Shop em quatro países da Ásia",
+      "resumo": "Sem anúncio formal, o TikTok liberou um aplicativo próprio do TikTok Shop em Singapura, Malásia, Tailândia e Filipinas. O app concentra a compra: recomendações personalizadas de produtos, lives e vídeos curtos ligados aos anúncios de produtos, ofertas exclusivas, checkout interno, rastreio de pedidos e atendimento. A empresa não comentou se o app chegará a outros mercados.",
+      "por_que_importa": "Ainda não vale para o Brasil, mas indica que o TikTok quer o Shop como destino de compra próprio; vendedores e afiliados daqui devem acompanhar se o modelo se expande.",
+      "status": "confirmado",
+      "fonte_nome": "TechCrunch",
+      "fonte_url": "https://techcrunch.com/2026/11/05/tiktok-quietly-launches-a-standalone-tiktok-shop-app/"
+    },
+    {
+      "id": "2026-11-06-edits-versao-mac",
+      "data": "2026-11-06",
+      "publicado_em": "2026-11-05",
+      "plataforma": "Instagram",
+      "categoria": "Criadores",
+      "impacto": "Médio",
+      "titulo": "Edits, editor de vídeo do Instagram, ganha versão para Mac",
+      "resumo": "Depois de um período de testes com criadores selecionados, a versão desktop do Edits foi liberada para download no Mac. Ela traz linha do tempo com várias trilhas, diferentes proporções de tela, exportação em 4K sem marca d'água, ajustes de cor avançados e importação de LUTs e fontes próprias. Segundo a Meta, o app passou de 50 milhões de usuários, e a empresa estuda edição contínua entre celular e computador.",
+      "por_que_importa": "Equipes e agências que editam no Mac ganham uma opção gratuita pensada para Reels, com exportação em 4K sem marca d'água, o que pode substituir editores pagos em parte do fluxo.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today",
+      "fonte_url": "https://www.socialmediatoday.com/news/edits-launches-for-macos/873949/"
+    },
+    {
+      "id": "2026-11-06-meta-tiktok-processam-california-feeds-menores",
+      "data": "2026-11-06",
+      "publicado_em": "2026-11-05",
+      "plataforma": "Instagram",
+      "categoria": "Políticas e privacidade",
+      "impacto": "Baixo",
+      "titulo": "Meta, TikTok e Google vão à Justiça contra lei da Califórnia que proíbe feed infinito para menores de 16",
+      "resumo": "Segundo a Reuters, as três empresas entraram com ações para barrar a lei AB 1709, sancionada em setembro, que obriga as plataformas a desligar feeds viciantes, rolagem infinita e reprodução automática para menores de 16 anos, ou a impedir o acesso desse público. A lei entra em vigor em 1º de janeiro. As empresas alegam que a regra viola a liberdade de expressão e a proteção legal das plataformas nos EUA. Afeta Instagram, Facebook e TikTok.",
+      "por_que_importa": "Não vale no Brasil, mas reforça a tendência de regras que limitam o feed algorítmico para adolescentes, o que pode reduzir o alcance de marcas com público jovem onde forem aprovadas.",
+      "status": "confirmado",
+      "fonte_nome": "Social Media Today (cita Reuters)",
+      "fonte_url": "https://www.socialmediatoday.com/news/meta-tiktok-and-google-push-back-on-california-law/873955/"
+    },
     {
       "id": "2026-11-05-facebook-creator-fast-track-brasil",
       "data": "2026-11-05",
